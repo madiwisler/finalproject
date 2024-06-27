@@ -1,0 +1,204 @@
+:root{
+    --lt-moss: #afb79f;
+    --dk-moss: #778b70;
+    --forest-green: #3e4a32;
+    --sand-cream:#c3b49f;
+    --sky-blue: #d1e1f2;
+    --md-blue: #8caecc;
+    --md-grey: #64645f;
+    --white: white;
+
+    --body-fonts: 'Lato', 'Poppins', Arial;
+
+    --box-shadow-sm: -3px 3px 7px var(--md-grey);
+    --box-shadow-lg: -6px 6px 10px var(--md-grey);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    line-height: 1.5;
+    font-family: var(--body-fonts);
+    color: var(--md-grey)
+}
+
+header{
+    background-image: url("images/swiss-valley.jpg");
+    background-repeat: no-repeat;
+    width: calc(1200px - 4rem); 
+    margin: 0 auto; 
+    padding: 2rem;
+    height: calc(415px - 4rem);
+    text-decoration: none;
+    color: white;
+    
+}
+
+:any-link{
+    text-decoration: none;
+    color: var(--forest-green);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    padding-top: 0;
+    top: 25%;
+    left: 25%;
+    font-size: 1.25rem;
+}
+
+.menu{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    
+}
+
+nav a:hover{
+    color: var(--sky-blue);
+    border-radius: 2px 2px;
+    border-color: black;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    display: inline-flex;
+}
+
+li{
+    margin: 2rem;
+    padding: 5px;
+    text-align: center;
+}
+
+main{
+    width: 1200px; /* there is no padding, so we'll use our 1200px max width on the main */
+    margin: 0 auto; /* this centers the main on the page */
+    background-color: white;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+    padding: 3px;
+  }
+
+main h2{
+    color: var(--md-blue);
+}
+
+main h3{
+    color: var(--md-blue);
+}
+
+main #relax{
+    padding: 5rem;
+}
+
+footer::before{
+    display: block;
+    content: '';
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+}
+
+main #reach {
+    color: var(--md-grey);
+    padding: 2rem;
+    text-align: left;
+    padding-right: 70%;
+}
+
+.right{
+    color: var(--md-grey);
+    text-align: left;
+    padding-top: 0;
+}
+
+.left h2{
+    color: var(--md-blue);
+}
+
+.left{
+    text-align: left;
+    margin-left: 30%;
+    font-size: 1rem;
+}
+
+
+
+input, label, select, textarea{
+	display: block;
+	width: 100%;
+}
+
+label{
+    display: inline;
+    margin: 0 0 4px 0;
+	font-weight: bold;
+    color: var(--md-grey);
+    float: left;
+    
+}
+
+input, select, textarea{
+	padding: 10px;
+	font-size: 1rem;
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border: 2px inset var(--md-blue);
+	background-color: var(--sky-blue);
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; 
+    padding: 2rem;
+}
+
+fieldset{
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border-color: var(--dk-gray);
+	display: flex;
+}
+
+fieldset .label{
+    display: inline;
+    width: 25%;
+    text-align: right;
+    float: left;
+}
+
+form{
+	width: 350px;
+	margin: 16px auto;
+	padding: 16px;
+	color: var(--md-grey);
+	border-radius: 4px;
+}
+
+footer{
+    background-color: white;
+    border-radius: 0%;
+    border-top: #8caecc;
+    padding: 2rem 1rem;
+    width: calc(1200px - 2rem); 
+    margin: 0 auto; 
+    text-align: center; 
+}
+

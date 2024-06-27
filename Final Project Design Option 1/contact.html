@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sierra Blanca | Contact</title>
+
+    <meta name="author" content="Madison Wisler">
+    <meta name="description" content="Sierra Blanca, Swiss Mountain Resort | Contact Us">
+
+    <!-- Favicon Code -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+    <!-- Custom Stylesheet Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container"> 
+
+            <a href="#" aria-label="go to home page">
+                <div class="centered"><h1><a href="index.html">Sierra Blanca</a></h1>
+            </a>
+                
+            <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Accommodations.html">Accommodations</a></li>
+                        <li><a href="contact.html">Contact</a></li> 
+                    </ul>
+                </div>
+            </nav>   
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="grid-parent">
+            <div class="left">
+                <section id="contact">
+                    <h2>Contact Us</h2>
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a *</p>
+                    <img src="images/swiss-peak.jpg" alt="Snowy capped mountains of the Swiss Peaks" height="455" width="350">
+                </section>
+            </div>
+            <div class="right">
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                    <p>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" required>
+                    </p>
+
+                    <p>
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" required>
+                    </p>
+                    
+                    <fieldset>
+                    <legend>Preferred Method of Contact</legend>
+                        <input type="radio" name="contact-pref" id="pref-email" checked>
+                        <label for="pref-email">Email</label>
+                        <input type="radio" name="contact-pref" id="pref-phone">
+                        <label for="pref-phone">Phone</label>
+                    </fieldset>
+
+                    <label for="my-comments">Comments</label>
+                    <textarea name="my-comments" id="my-comments" required></textarea>
+
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <p>Copyright ©2023 - Sierra Blanca</p>
+    <p>This site is for educational purposes only</p>
+</footer>
+
+</body>
+
+</html>
